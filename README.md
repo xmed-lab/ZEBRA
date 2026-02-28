@@ -62,7 +62,7 @@ pip install -r requirements.txt
 ```
 
 
-### 📊 Data Preparation
+### 📊 Data and Weights Preparation
 
 Download the pre-processed dataset:
 
@@ -72,6 +72,7 @@ unzip fmri_npy.zip
 unzip nsddata_stimuli.zip
 ```
 
+Download the pretrained weights of the fMRI encoder from [here](https://huggingface.co/Fudan-fMRI/neuropictor/tree/main/ckpt/fMRI2fMRI_UKB). Then put them under `pretrained_weights/fMRI2fMRI_UKB/`.
 
 
 
