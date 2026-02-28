@@ -204,8 +204,8 @@ class Config(object):
 
 
 def load_fmri_backbone():
-    ckpt_encoder = '../CrossSubj/ckpt/fMRI2fMRI_UKB/checkpoint_120000.pth'
-    cfg_file = '../CrossSubj/ckpt/fMRI2fMRI_UKB/fMRI_AutoEncoder.yaml'
+    ckpt_encoder = './pretrained_weights/fMRI2fMRI_UKB/checkpoint_120000.pth'
+    cfg_file = './pretrained_weights/fMRI2fMRI_UKB/fMRI_AutoEncoder.yaml'
     config = Config(cfg_file)
 
     fmri_backbone = fMRI_Autoencoder(config)
