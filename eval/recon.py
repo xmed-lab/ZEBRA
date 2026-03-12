@@ -39,7 +39,7 @@ def parse_arg():
         "--root_dir", type=str, default='../cc2017_dataset',
     )
     parser.add_argument(
-        "--weights_dir", type=str, default='../CrossSubj/pretrained_weights',
+        "--weights_dir", type=str, default='./pretrained_weights',
     )
     parser.add_argument(
         "--exp", type=str, default='./saved_weights',
