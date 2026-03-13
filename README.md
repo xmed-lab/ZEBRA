@@ -74,7 +74,14 @@ unzip nsddata_stimuli.zip
 
 Download the pretrained weights of the fMRI encoder from [here](https://huggingface.co/Fudan-fMRI/neuropictor/tree/main/ckpt/fMRI2fMRI_UKB). Then put them under `pretrained_weights/fMRI2fMRI_UKB/`.
 
-
+Download the pretrained weights for recon via:
+```bash
+cd pretrained_weights 
+wget -O unclip6_epoch0_step110000.ckpt -c https://huggingface.co/datasets/pscotti/mindeyev2/resolve/main/unclip6_epoch0_step110000.ckpt\?download\=true
+wget -O convnext_xlarge_alpha0.75_fullckpt.pth -c https://huggingface.co/datasets/pscotti/mindeyev2/resolve/main/convnext_xlarge_alpha0.75_fullckpt.pth\?download\=true
+wget -O sd_image_var_autoenc.pth https://huggingface.co/datasets/pscotti/mindeyev2/resolve/main/sd_image_var_autoenc.pth\?download\=true
+wget -O zavychromaxl_v30.safetensors https://huggingface.co/datasets/pscotti/mindeyev2/resolve/main/zavychromaxl_v30.safetensors?download=true
+```
 
 ## 🚀 Quick Start
 This codebase allows train, test, and evaluate using one single bash file.
